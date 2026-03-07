@@ -1606,8 +1606,8 @@ export const recipes: Recipe[] = [
     ],
   },
   {
-    id: 'nigerian-fried-rice',
-    name: 'Nigerian Fried Rice',
+    id: 'basmati-fried-rice',
+    name: 'Basmati Fried Rice',
     description: 'Colorful and flavorful basmati fried rice loaded with vegetables, prawns, and chicken. A staple at Nigerian parties.',
     category: 'rice',
     dietaryTags: ['dairy-free', 'high-protein'],
