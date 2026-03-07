@@ -60,3 +60,33 @@ export interface GroceryItem {
   category: Ingredient['category'];
   checked: boolean;
 }
+
+// Meal Goals for auto-generation
+export type DietGoal =
+  | 'high-protein-weight-loss'
+  | 'low-carb'
+  | 'balanced'
+  | 'vegetarian'
+  | 'budget-friendly';
+
+export interface DietGoalInfo {
+  id: DietGoal;
+  name: string;
+  description: string;
+  dailyTargets: {
+    calories: { min: number; max: number };
+    protein: { min: number; max: number };
+    carbs: { min: number; max: number };
+  };
+}
+
+// Meal Combo - complete meals (e.g., Rice + Stew, Swallow + Soup)
+export interface MealCombo {
+  id: string;
+  name: string;
+  description: string;
+  recipes: string[]; // recipe IDs that make up this combo
+  suitableFor: MealTime[];
+  dietGoals: DietGoal[];
+  totalNutrition: NutritionInfo;
+}
