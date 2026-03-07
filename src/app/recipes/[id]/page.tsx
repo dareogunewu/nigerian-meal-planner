@@ -96,24 +96,24 @@ export default function RecipePage() {
           <h2 className="text-xl font-bold text-gray-800 mb-4">Nutrition Facts</h2>
           <p className="text-sm text-gray-500 mb-4">Per serving</p>
           <div className="grid grid-cols-5 gap-4">
-            <div className="text-center p-3 bg-orange-50 rounded-lg">
-              <span className="block text-2xl font-bold text-orange-600">{recipe.nutrition.calories}</span>
+            <div className="text-center p-3 bg-gray-50 rounded-lg">
+              <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.calories}</span>
               <span className="text-sm text-gray-600">Calories</span>
             </div>
-            <div className="text-center p-3 bg-blue-50 rounded-lg">
-              <span className="block text-2xl font-bold text-blue-600">{recipe.nutrition.protein}g</span>
+            <div className="text-center p-3 bg-gray-50 rounded-lg">
+              <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.protein}g</span>
               <span className="text-sm text-gray-600">Protein</span>
             </div>
-            <div className="text-center p-3 bg-amber-50 rounded-lg">
-              <span className="block text-2xl font-bold text-amber-600">{recipe.nutrition.carbs}g</span>
+            <div className="text-center p-3 bg-gray-50 rounded-lg">
+              <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.carbs}g</span>
               <span className="text-sm text-gray-600">Carbs</span>
             </div>
-            <div className="text-center p-3 bg-red-50 rounded-lg">
-              <span className="block text-2xl font-bold text-red-600">{recipe.nutrition.fat}g</span>
+            <div className="text-center p-3 bg-gray-50 rounded-lg">
+              <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.fat}g</span>
               <span className="text-sm text-gray-600">Fat</span>
             </div>
-            <div className="text-center p-3 bg-green-50 rounded-lg">
-              <span className="block text-2xl font-bold text-green-600">{recipe.nutrition.fiber}g</span>
+            <div className="text-center p-3 bg-gray-50 rounded-lg">
+              <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.fiber}g</span>
               <span className="text-sm text-gray-600">Fiber</span>
             </div>
           </div>

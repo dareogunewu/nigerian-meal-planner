@@ -78,10 +78,10 @@ export default function MyPlanPage() {
                 </div>
                 <p className="text-sm text-gray-600">{goal.description}</p>
                 <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                  <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded">
+                  <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded">
                     {goal.dailyTargets.calories.min}-{goal.dailyTargets.calories.max} cal
                   </span>
-                  <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded">
+                  <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded">
                     {goal.dailyTargets.protein.min}g+ protein
                   </span>
                 </div>
@@ -198,11 +198,11 @@ export default function MyPlanPage() {
                         </td>
                         <td className="px-4 py-4 text-right">
                           <div className="text-sm">
-                            <span className="font-semibold text-orange-600">
+                            <span className="font-semibold text-gray-800">
                               {dailyNutrition.calories} cal
                             </span>
                             <br />
-                            <span className="text-blue-600">
+                            <span className="text-gray-600">
                               {dailyNutrition.protein}g protein
                             </span>
                           </div>
@@ -248,10 +248,10 @@ function MealCard({ combo }: { combo: { name: string; totalNutrition: { calories
     <div className="bg-gray-50 rounded-lg p-3">
       <p className="font-medium text-gray-800 text-sm mb-1">{combo.name}</p>
       <div className="flex gap-2 text-xs">
-        <span className="px-1.5 py-0.5 bg-orange-100 text-orange-700 rounded">
+        <span className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded">
           {combo.totalNutrition.calories} cal
         </span>
-        <span className="px-1.5 py-0.5 bg-blue-100 text-blue-700 rounded">
+        <span className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded">
           {combo.totalNutrition.protein}g
         </span>
       </div>
@@ -287,23 +287,23 @@ function WeeklySummary() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
       <div className="text-center p-3 bg-white rounded-lg">
-        <span className="block text-2xl font-bold text-orange-600">{avgCalories}</span>
+        <span className="block text-2xl font-bold text-gray-800">{avgCalories}</span>
         <span className="text-sm text-gray-600">Avg Daily Calories</span>
       </div>
       <div className="text-center p-3 bg-white rounded-lg">
-        <span className="block text-2xl font-bold text-blue-600">{avgProtein}g</span>
+        <span className="block text-2xl font-bold text-gray-800">{avgProtein}g</span>
         <span className="text-sm text-gray-600">Avg Daily Protein</span>
       </div>
       <div className="text-center p-3 bg-white rounded-lg">
-        <span className="block text-2xl font-bold text-amber-600">{avgCarbs}g</span>
+        <span className="block text-2xl font-bold text-gray-800">{avgCarbs}g</span>
         <span className="text-sm text-gray-600">Avg Daily Carbs</span>
       </div>
       <div className="text-center p-3 bg-white rounded-lg">
-        <span className="block text-2xl font-bold text-red-600">{avgFat}g</span>
+        <span className="block text-2xl font-bold text-gray-800">{avgFat}g</span>
         <span className="text-sm text-gray-600">Avg Daily Fat</span>
       </div>
       <div className="text-center p-3 bg-white rounded-lg">
-        <span className="block text-2xl font-bold text-green-600">{avgFiber}g</span>
+        <span className="block text-2xl font-bold text-gray-800">{avgFiber}g</span>
         <span className="text-sm text-gray-600">Avg Daily Fiber</span>
       </div>
     </div>
