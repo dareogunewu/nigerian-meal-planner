@@ -11,6 +11,15 @@ export interface Ingredient {
   category: 'protein' | 'vegetable' | 'grain' | 'spice' | 'oil' | 'dairy' | 'other';
 }
 
+export interface NutritionInfo {
+  calories: number;      // per serving
+  protein: number;       // grams
+  carbs: number;         // grams
+  fat: number;           // grams
+  fiber: number;         // grams
+  sodium?: number;       // mg (optional)
+}
+
 export interface Recipe {
   id: string;
   name: string;
@@ -22,6 +31,7 @@ export interface Recipe {
   servings: number;
   ingredients: Ingredient[];
   instructions: string[];
+  nutrition?: NutritionInfo;
   imageUrl?: string;
   creator?: {
     name: string;

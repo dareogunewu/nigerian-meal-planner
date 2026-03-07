@@ -46,6 +46,17 @@ export default function RecipeCard({ recipe, onAddToMealPlan }: RecipeCardProps)
           </span>
         </div>
 
+        {recipe.nutrition && (
+          <div className="flex items-center gap-3 mt-3 text-xs">
+            <span className="px-2 py-1 bg-orange-50 text-orange-700 rounded-md font-medium">
+              {recipe.nutrition.calories} cal
+            </span>
+            <span className="px-2 py-1 bg-blue-50 text-blue-700 rounded-md font-medium">
+              {recipe.nutrition.protein}g protein
+            </span>
+          </div>
+        )}
+
         {recipe.dietaryTags.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-3">
             {recipe.dietaryTags.slice(0, 3).map(tag => (
