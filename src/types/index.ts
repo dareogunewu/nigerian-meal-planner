@@ -67,7 +67,10 @@ export type DietGoal =
   | 'low-carb'
   | 'balanced'
   | 'vegetarian'
-  | 'budget-friendly';
+  | 'budget-friendly'
+  | 'light-meals'
+  | 'muscle-gain'
+  | 'diabetic-friendly';
 
 export interface DietGoalInfo {
   id: DietGoal;

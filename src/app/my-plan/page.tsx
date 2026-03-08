@@ -73,6 +73,9 @@ export default function MyPlanPage() {
                     {goal.id === 'balanced' && '⚖️'}
                     {goal.id === 'vegetarian' && '🥬'}
                     {goal.id === 'budget-friendly' && '💰'}
+                    {goal.id === 'light-meals' && '🍃'}
+                    {goal.id === 'muscle-gain' && '🏋️'}
+                    {goal.id === 'diabetic-friendly' && '💚'}
                   </span>
                   <h3 className="font-semibold text-gray-800">{goal.name}</h3>
                 </div>
@@ -117,6 +120,9 @@ export default function MyPlanPage() {
                     {currentDietGoal === 'balanced' && '⚖️'}
                     {currentDietGoal === 'vegetarian' && '🥬'}
                     {currentDietGoal === 'budget-friendly' && '💰'}
+                    {currentDietGoal === 'light-meals' && '🍃'}
+                    {currentDietGoal === 'muscle-gain' && '🏋️'}
+                    {currentDietGoal === 'diabetic-friendly' && '💚'}
                   </span>
                   <h2 className="text-xl font-bold">{currentGoalInfo?.name} Plan</h2>
                 </div>
