@@ -42,7 +42,7 @@ export default function MyPlanPage() {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">My Weekly Plan</h1>
-        <p className="text-gray-500">
+        <p className="text-gray-700">
           Auto-generate a personalized meal plan based on your dietary goals
         </p>
       </div>
@@ -98,7 +98,7 @@ export default function MyPlanPage() {
             className={`w-full py-3 rounded-lg font-semibold transition-colors ${
               selectedGoal
                 ? 'bg-green-600 text-white hover:bg-green-700'
-                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                : 'bg-gray-200 text-gray-600 cursor-not-allowed'
             }`}
           >
             Generate My Meal Plan
@@ -185,21 +185,21 @@ export default function MyPlanPage() {
                           {breakfast ? (
                             <MealCard combo={breakfast} />
                           ) : (
-                            <span className="text-gray-400">-</span>
+                            <span className="text-gray-600">-</span>
                           )}
                         </td>
                         <td className="px-4 py-4">
                           {lunch ? (
                             <MealCard combo={lunch} />
                           ) : (
-                            <span className="text-gray-400">-</span>
+                            <span className="text-gray-600">-</span>
                           )}
                         </td>
                         <td className="px-4 py-4">
                           {dinner ? (
                             <MealCard combo={dinner} />
                           ) : (
-                            <span className="text-gray-400">-</span>
+                            <span className="text-gray-600">-</span>
                           )}
                         </td>
                         <td className="px-4 py-4 text-right">

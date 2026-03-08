@@ -36,7 +36,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="bg-white border-t border-gray-100 py-8 mt-12">
-            <div className="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <div className="max-w-7xl mx-auto px-4 text-center text-gray-700 text-sm">
               <p>NaijaMeals - Authentic Nigerian recipes from creators you love</p>
               <p className="mt-2">
                 Recipes inspired by Sisi Yemmie, Sisi Jemimah, Zeelicious Foods, and more

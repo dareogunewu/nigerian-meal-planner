@@ -30,7 +30,7 @@ export default function MealPlanGrid() {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold text-gray-800">Weekly Meal Plan</h2>
-        <span className="text-sm text-gray-500">{getMealCount()} meals planned</span>
+        <span className="text-sm text-gray-700">{getMealCount()} meals planned</span>
       </div>
 
       <div className="overflow-x-auto">
@@ -86,7 +86,7 @@ export default function MealPlanGrid() {
                     ) : (
                       <Link
                         href={`/recipes?addTo=${day}-${mealTime}`}
-                        className="w-full h-full flex items-center justify-center text-gray-400 hover:text-green-600 transition-colors"
+                        className="w-full h-full flex items-center justify-center text-gray-600 hover:text-green-600 transition-colors"
                       >
                         <span className="text-2xl">+</span>
                       </Link>

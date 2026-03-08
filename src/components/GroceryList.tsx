@@ -51,7 +51,7 @@ export default function GroceryListComponent() {
       <div className="text-center py-12">
         <span className="text-6xl mb-4 block">🛒</span>
         <h2 className="text-xl font-semibold text-gray-700 mb-2">Your grocery list is empty</h2>
-        <p className="text-gray-500">Add meals to your meal plan to generate a grocery list.</p>
+        <p className="text-gray-700">Add meals to your meal plan to generate a grocery list.</p>
       </div>
     );
   }
@@ -61,12 +61,12 @@ export default function GroceryListComponent() {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-xl font-bold text-gray-800">Grocery List</h2>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-700">
             Based on {recipes.length} recipe{recipes.length !== 1 ? 's' : ''} in your meal plan
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-700">
             {checkedCount}/{totalCount} items
           </span>
           {checkedCount > 0 && (
@@ -102,7 +102,7 @@ export default function GroceryListComponent() {
                   onClick={() => toggleItem(item.ingredient)}
                   className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
                     checkedItems.has(item.ingredient)
-                      ? 'bg-green-50 text-gray-400 line-through'
+                      ? 'bg-green-50 text-gray-600 line-through'
                       : 'bg-white hover:bg-gray-50'
                   }`}
                 >
@@ -120,7 +120,7 @@ export default function GroceryListComponent() {
                     )}
                   </div>
                   <span className="flex-1">{item.ingredient}</span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-gray-700">
                     {item.amount} {item.unit}
                   </span>
                 </div>

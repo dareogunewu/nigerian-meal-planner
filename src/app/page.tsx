@@ -42,15 +42,15 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-green-600">{recipes.length}+</div>
-              <div className="text-gray-500">Authentic Recipes</div>
+              <div className="text-gray-700">Authentic Recipes</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-green-600">{categories.length}</div>
-              <div className="text-gray-500">Categories</div>
+              <div className="text-gray-700">Categories</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-green-600">10+</div>
-              <div className="text-gray-500">Featured Creators</div>
+              <div className="text-gray-700">Featured Creators</div>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
               >
                 <span className="text-4xl mb-2 block">{cat.emoji}</span>
                 <span className="font-medium text-gray-700">{cat.name}</span>
-                <span className="block text-sm text-gray-400 mt-1">
+                <span className="block text-sm text-gray-700 mt-1">
                   {recipes.filter(r => r.category === cat.id).length} recipes
                 </span>
               </Link>
@@ -108,7 +108,7 @@ export default function Home() {
                 <span className="text-2xl">📖</span>
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">1. Browse Recipes</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Explore authentic Nigerian recipes from your favorite food creators
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
                 <span className="text-2xl">📅</span>
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">2. Plan Your Week</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Add meals to your weekly planner for breakfast, lunch, and dinner
               </p>
             </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 <span className="text-2xl">🛒</span>
               </div>
               <h3 className="font-semibold text-gray-800 mb-2">3. Shop Smart</h3>
-              <p className="text-gray-500">
+              <p className="text-gray-700">
                 Get an auto-generated grocery list organized by category
               </p>
             </div>

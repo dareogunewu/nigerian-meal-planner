@@ -121,7 +121,7 @@ function RecipesContent() {
       </div>
 
       {/* Results count */}
-      <p className="text-gray-500 mb-4">
+      <p className="text-gray-700 mb-4">
         Showing {filteredRecipes.length} of {recipes.length} recipes
       </p>
 
@@ -140,7 +140,7 @@ function RecipesContent() {
         <div className="text-center py-12">
           <span className="text-6xl mb-4 block">🍽️</span>
           <h2 className="text-xl font-semibold text-gray-700 mb-2">No recipes found</h2>
-          <p className="text-gray-500">Try adjusting your filters or search query.</p>
+          <p className="text-gray-700">Try adjusting your filters or search query.</p>
         </div>
       )}
     </div>

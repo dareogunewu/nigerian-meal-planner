@@ -13,7 +13,7 @@ export default function GroceryListPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">Grocery List</h1>
-          <p className="text-gray-500 mt-1">
+          <p className="text-gray-700 mt-1">
             Auto-generated from your meal plan
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function GroceryListPage() {
       </div>
 
       {recipes.length > 0 && (
-        <div className="mt-6 text-center text-sm text-gray-500">
+        <div className="mt-6 text-center text-sm text-gray-700">
           <p>Tip: Click items to mark them as purchased</p>
         </div>
       )}

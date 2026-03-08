@@ -13,7 +13,7 @@ export default function MealPlanPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">Weekly Meal Plan</h1>
-          <p className="text-gray-500 mt-1">
+          <p className="text-gray-700 mt-1">
             Click the + button to add meals to your plan
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function MealPlanPage() {
         <div className="mt-8 text-center py-12 bg-white rounded-xl border border-gray-100">
           <span className="text-6xl mb-4 block">📅</span>
           <h2 className="text-xl font-semibold text-gray-700 mb-2">Your meal plan is empty</h2>
-          <p className="text-gray-500 mb-6">
+          <p className="text-gray-700 mb-6">
             Start by browsing recipes and adding them to your weekly plan.
           </p>
           <Link

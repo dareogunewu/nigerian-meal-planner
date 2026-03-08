@@ -31,7 +31,7 @@ export default function RecipeCard({ recipe, onAddToMealPlan }: RecipeCardProps)
         </Link>
         <p className="text-gray-600 text-sm mt-1 line-clamp-2">{recipe.description}</p>
 
-        <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
+        <div className="flex items-center gap-4 mt-3 text-sm text-gray-700">
           <span className="flex items-center gap-1">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -80,7 +80,7 @@ export default function RecipeCard({ recipe, onAddToMealPlan }: RecipeCardProps)
         )}
 
         {recipe.creator && (
-          <p className="mt-2 text-xs text-gray-400">
+          <p className="mt-2 text-xs text-gray-700">
             Recipe by {recipe.creator.name}
           </p>
         )}

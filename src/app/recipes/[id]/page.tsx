@@ -94,7 +94,7 @@ export default function RecipePage() {
       {recipe.nutrition && (
         <div className="bg-white rounded-xl p-6 border border-gray-100 mb-8">
           <h2 className="text-xl font-bold text-gray-800 mb-4">Nutrition Facts</h2>
-          <p className="text-sm text-gray-500 mb-4">Per serving</p>
+          <p className="text-sm text-gray-700 mb-4">Per serving</p>
           <div className="grid grid-cols-5 gap-4">
             <div className="text-center p-3 bg-gray-50 rounded-lg">
               <span className="block text-2xl font-bold text-gray-800">{recipe.nutrition.calories}</span>
